@@ -6,7 +6,7 @@ from .hello_app import app
 class MyTestCase(unittest.TestCase):
 
     def assert_contains(self, substring, string):
-        assert substring.upper() in string.upper()
+        assert substring in string
 
 
 class HelloTest(MyTestCase):
