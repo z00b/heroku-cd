@@ -15,4 +15,4 @@ class HelloTest(MyTestCase):
         self.app = app.test_client()
 
     def test_root(self):
-        self.assert_contains('Hello', self.app.get('/').data)
+        self.assert_contains('Goodbye', self.app.get('/').data)
